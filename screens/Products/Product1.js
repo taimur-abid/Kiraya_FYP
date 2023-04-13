@@ -15,7 +15,7 @@ import {
 
 
 
-const Product1 = ({navigation}) => {
+const Product1 = (props,{navigation}) => {
   return (
     
     <View style={styles.container} >
