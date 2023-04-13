@@ -19,6 +19,11 @@ target 'Kiraya' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+
   target 'KirayaTests' do
     inherit! :complete
     # Pods for testing

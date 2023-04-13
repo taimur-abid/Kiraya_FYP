@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-const Email= ({navigation}) => {
+const EmailAuth= ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.CircleBlue} />
@@ -19,26 +19,26 @@ const Email= ({navigation}) => {
         
         <Text style={{top:185,fontWeight:'300',fontSize:20,color:'#000000'}}>Before you get started...</Text>
         
-        <Text style={{top:210,fontWeight:'700',fontSize:20,color:'#000000',textDecorationLine: 'underline'}}>Step 3</Text>
+        <Text style={{top:210,fontWeight:'700',fontSize:20,color:'#000000',textDecorationLine: 'underline'}}>Email OTP Verification</Text>
         
         <Text style={{top:220,fontWeight:'500',fontSize:15,color:'#000000',letterSpacing:0.06,textAlign:'center'}}> In order to rent on the app, we need to verify your Email Address
 
-Enter your Email Address. </Text>
+        {"\n"} Enter OTP sent to your Email Address. </Text>
 
-        <View style={{flexDirection:'row',alignItems:'center',top:300}}>
+        <View style={{flexDirection:'row',alignItems:'center',top:300,left:50}}>
 
-            <Text style={{fontWeight:'bold',fontSize:14,color:'#000000',letterSpacing:0.06,textAlign:'center'}}>Email Address :</Text>
+            <Text style={{fontWeight:'bold',fontSize:14,color:'#000000',letterSpacing:0.06,textAlign:'center'}}>OTP :</Text>
 
             <TextInput 
             style={{color:'#5C83BC',fontSize:15,fontWeight:'bold',width:180}} 
-            placeholder="i.e JohnDoe@kiraya.com"
+            placeholder="i.e XXXXXX"
             keyboardType="email-address">
             </TextInput>
 
         </View>
 
-        <TouchableOpacity style={styles.Bluebutton}  onPress={() => navigation.navigate('EmailAuth')}>
-          <Text style={{textAlign:'center',marginTop:11,color:'#000000',fontWeight:'700'}}>SEND CODE</Text>
+        <TouchableOpacity style={styles.Bluebutton}  onPress={() => navigation.navigate('Cnic')}>
+          <Text style={{textAlign:'center',marginTop:11,color:'#000000',fontWeight:'700'}}>Verify</Text>
         </TouchableOpacity>
 
         <View style={{flexDirection:'row',alignItems:'center',top:450}}>
@@ -60,7 +60,6 @@ Enter your Email Address. </Text>
   
 
   const styles = StyleSheet.create({
-    
     container: {
       flex:8,
       justifyContent: 'center',
@@ -97,5 +96,5 @@ Enter your Email Address. </Text>
       backgroundColor: '#1F3846',
     },
   });
-  export default Email;
+  export default EmailAuth;
   

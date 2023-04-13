@@ -29,7 +29,7 @@ const Category = ({navigation}) => {
             <View style={{width: 420,height: 3,top:10,backgroundColor:'#000000',borderRadius: 12}}/>
 
             <View style={{flexDirection:'row'}}>
-                <Image style={{width: 80,height: 74,top: 20}} source={require('./dp.png')} />
+                <Image style={{width: 80,height: 74,top: 20}} source={require('./images/dp.png')} />
                 <Text style={{fontSize:19,color:'#000000',top:22,left:12,fontWeight:'400',alignSelf:'center'}}>No Products Found Yet</Text>
             </View>
 

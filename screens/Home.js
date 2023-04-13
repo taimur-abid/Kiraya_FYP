@@ -34,7 +34,7 @@ const Home = ({navigation}) => {
           backgroundColor: '#9FB0DB',
         }}
       />
-      <Image style={styles.tinyLogo} source={require('./Kiraya.png')} />
+      <Image style={styles.tinyLogo} source={require('./images/Kiraya.png')} />
       <Text style={styles.FontKiraya}>Welcome to Kiraya - کرایہ</Text>
       <Text style={styles.FontUtellize}>Utilize to Monetize</Text>
       <TouchableOpacity

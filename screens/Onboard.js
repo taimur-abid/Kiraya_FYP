@@ -13,7 +13,7 @@ const Onboard = ({navigation}) => {
     <View style={styles.container}>
       <View style={styles.CircleBlue} />
       <View style={styles.CircleDark} />
-      <Image style={styles.tinyLogo} source={require('./Girl.png')} />
+      <Image style={styles.tinyLogo} source={require('./images/Girl.png')} />
       <Text style={styles.FontOnboard}>Welcome Onboard!</Text>
       <Text style={styles.FontUser}>Become a verified User</Text>
       <View style={styles.Rectangle}>
@@ -38,7 +38,7 @@ const Onboard = ({navigation}) => {
             left: 185,
             top: 25,
           }}
-          source={require('./image.png')}
+          source={require('./images/image.png')}
         />
       </View>
       <View
@@ -52,7 +52,7 @@ const Onboard = ({navigation}) => {
           borderRadius: 12,
         }}
       />
-      <TouchableOpacity
+      <View
         style={{
           height: 50,
           position: 'absolute',
@@ -61,7 +61,7 @@ const Onboard = ({navigation}) => {
           backgroundColor: '#60A1D8',
           alignItems: 'center',
         }}
-        onPress={() => navigation.navigate('PhoneNum')}>
+        >
         <Text
           style={{
             marginTop: 11,
@@ -69,21 +69,21 @@ const Onboard = ({navigation}) => {
             fontSize: 20,
             color: '#000000',
           }}>
-          Verify your Mobile Number
+          1) Create your Profile
         </Text>
-      </TouchableOpacity>
+      </View>
       <View
         style={{
           position: 'absolute',
           width: 450,
-          height: 4,
+          height: 3,
           left: 0,
           top: 445,
           backgroundColor: '#000000',
           borderRadius: 12,
         }}
       />
-      <TouchableOpacity
+      <View
         style={{
           height: 50,
           position: 'absolute',
@@ -92,7 +92,7 @@ const Onboard = ({navigation}) => {
           backgroundColor: '#60A1D8',
           alignItems: 'center',
         }}
-        onPress={() => navigation.navigate('Profile')}>
+        >
         <Text
           style={{
             marginTop: 11,
@@ -100,9 +100,9 @@ const Onboard = ({navigation}) => {
             fontSize: 20,
             color: '#000000',
           }}>
-          Create your Profile
+          2) Verify your Mobile Number
         </Text>
-      </TouchableOpacity>
+      </View>
       <View
         style={{
           position: 'absolute',
@@ -114,7 +114,7 @@ const Onboard = ({navigation}) => {
           borderRadius: 12,
         }}
       />
-      <TouchableOpacity
+      <View
         style={{
           height: 50,
           position: 'absolute',
@@ -131,21 +131,21 @@ const Onboard = ({navigation}) => {
             fontSize: 20,
             color: '#000000',
           }}>
-          Verify your email
+          3) Verify your email
         </Text>
-      </TouchableOpacity>
+      </View>
       <View
         style={{
           position: 'absolute',
           width: 450,
-          height: 4,
+          height: 3,
           left: 0,
           top: 565,
           backgroundColor: '#000000',
           borderRadius: 12,
         }}
       />
-      <TouchableOpacity
+      <View
         style={{
           height: 50,
           position: 'absolute',
@@ -154,7 +154,7 @@ const Onboard = ({navigation}) => {
           backgroundColor: '#60A1D8',
           alignItems: 'center',
         }}
-        onPress={() => navigation.navigate('Cnic')}>
+        >
         <Text
           style={{
             marginTop: 11,
@@ -162,14 +162,14 @@ const Onboard = ({navigation}) => {
             fontSize: 20,
             color: '#000000',
           }}>
-          Upload your CNIC
+          4) Verify your CNIC
         </Text>
-      </TouchableOpacity>
+      </View>
       <View
         style={{
           position: 'absolute',
           width: 450,
-          height: 4,
+          height: 3,
           left: 0,
           top: 625,
           backgroundColor: '#000000',
@@ -214,7 +214,7 @@ const Onboard = ({navigation}) => {
           backgroundColor: '#B2CCDF',
           alignItems: 'center',
         }}
-        onPress={() => navigation.navigate('SignUp')}>
+        onPress={() => navigation.navigate('Profile')}>
         <Text
           style={{
             marginTop: 11,
